@@ -1,26 +1,42 @@
 <html>
+<head>
+  <title>Register.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
 <body>
 
-<h2>Form</h2>
-
 <form action="/action_page.php">
-  <fieldset>
-    <legend>Personal information:</legend>
-    <input type="text" name="firstname" placeholder="First name">
-    <br><br>
-    <input type="text" name="lastname" placeholder="Last name">
-    <br><br>
-    <input type="text" name="hp" placeholder="Nomor seluler atau email">
-    <br><br>
-    <input type="text" name="pass" placeholder="Kata sandi baru">
-    <br><br>
+  <div class="container">
+    <center><h1>REGISTER</h1></center>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
 
-  <input type="radio" name="gender" value="male"> Male<br>
-  <input type="radio" name="gender" value="female"> Female<br>
-  <input type="radio" name="gender" value="other"> Other
-<br><br>
-    <input type="submit" value="Daftar">
-  </fieldset>
+    <label for="fname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" required>
+
+    <label for="lname"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other
+    <hr>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
 </form>
 
 </body>
